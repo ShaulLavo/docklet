@@ -31,6 +31,18 @@ chmod +x build.sh
 ./build.sh
 ```
 
+incase of
+
+```sh
+zsh: ./build.sh: bad interpreter: /bin/bash^M: no such file or directory
+```
+
+you can
+
+```sh
+sed -i 's/\r//' build.sh
+```
+
 ## Usage Example
 
 ```sh
